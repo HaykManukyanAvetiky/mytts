@@ -1,0 +1,31 @@
+[project]
+name = "mytts"
+version = "0.1.0"
+description = "FastAPI-based text-to-speech web application using Edge TTS"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "edge-tts>=6.1.9",
+    "python-multipart>=0.0.6",
+    "jinja2>=3.1.2",
+    "aiofiles>=23.2.1",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "httpx>=0.25.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["backend*"]
+exclude = ["static*", "context*"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

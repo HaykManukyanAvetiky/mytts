@@ -1,0 +1,143 @@
+================================================================================
+SPEECH RATE CONTROLS TEST
+================================================================================
+
+Testing 5 languages with 4 rate values each
+Total tests: 20
+
+================================================================================
+Testing English - Voice: en-US-GuyNeural
+================================================================================
+
+  Testing 0.75x (slow) (rate=-25%)...
+    ✓ SUCCESS - File size: 28,224 bytes
+
+  Testing 1.0x (normal) (rate=+0%)...
+    ✓ SUCCESS - File size: 21,168 bytes
+
+  Testing 1.25x (fast) (rate=+25%)...
+    ✓ SUCCESS - File size: 16,992 bytes
+
+  Testing 1.5x (fastest) (rate=+50%)...
+    ✓ SUCCESS - File size: 14,256 bytes
+
+  ✓ File sizes vary as expected
+  File size progression:
+    -25%: 28,224 bytes
+    +0%: 21,168 bytes
+    +25%: 16,992 bytes
+    +50%: 14,256 bytes
+
+================================================================================
+Testing Spanish - Voice: es-AR-ElenaNeural
+================================================================================
+
+  Testing 0.75x (slow) (rate=-25%)...
+    ✓ SUCCESS - File size: 36,720 bytes
+
+  Testing 1.0x (normal) (rate=+0%)...
+    ✓ SUCCESS - File size: 27,648 bytes
+
+  Testing 1.25x (fast) (rate=+25%)...
+    ✓ SUCCESS - File size: 22,176 bytes
+
+  Testing 1.5x (fastest) (rate=+50%)...
+    ✓ SUCCESS - File size: 18,576 bytes
+
+  ✓ File sizes vary as expected
+  File size progression:
+    -25%: 36,720 bytes
+    +0%: 27,648 bytes
+    +25%: 22,176 bytes
+    +50%: 18,576 bytes
+
+================================================================================
+Testing French - Voice: fr-FR-DeniseNeural
+================================================================================
+
+  Testing 0.75x (slow) (rate=-25%)...
+    ✓ SUCCESS - File size: 34,272 bytes
+
+  Testing 1.0x (normal) (rate=+0%)...
+    ✓ SUCCESS - File size: 25,776 bytes
+
+  Testing 1.25x (fast) (rate=+25%)...
+    ✓ SUCCESS - File size: 20,736 bytes
+
+  Testing 1.5x (fastest) (rate=+50%)...
+    ✓ SUCCESS - File size: 17,280 bytes
+
+  ✓ File sizes vary as expected
+  File size progression:
+    -25%: 34,272 bytes
+    +0%: 25,776 bytes
+    +25%: 20,736 bytes
+    +50%: 17,280 bytes
+
+================================================================================
+Testing German - Voice: de-DE-ConradNeural
+================================================================================
+
+  Testing 0.75x (slow) (rate=-25%)...
+    ✓ SUCCESS - File size: 38,592 bytes
+
+  Testing 1.0x (normal) (rate=+0%)...
+    ✓ SUCCESS - File size: 29,088 bytes
+
+  Testing 1.25x (fast) (rate=+25%)...
+    ✓ SUCCESS - File size: 23,328 bytes
+
+  Testing 1.5x (fastest) (rate=+50%)...
+    ✓ SUCCESS - File size: 19,440 bytes
+
+  ✓ File sizes vary as expected
+  File size progression:
+    -25%: 38,592 bytes
+    +0%: 29,088 bytes
+    +25%: 23,328 bytes
+    +50%: 19,440 bytes
+
+================================================================================
+Testing Portuguese - Voice: pt-BR-AntonioNeural
+================================================================================
+
+  Testing 0.75x (slow) (rate=-25%)...
+    ✓ SUCCESS - File size: 38,736 bytes
+
+  Testing 1.0x (normal) (rate=+0%)...
+    ✓ SUCCESS - File size: 29,088 bytes
+
+  Testing 1.25x (fast) (rate=+25%)...
+    ✓ SUCCESS - File size: 23,328 bytes
+
+  Testing 1.5x (fastest) (rate=+50%)...
+    ✓ SUCCESS - File size: 19,440 bytes
+
+  ✓ File sizes vary as expected
+  File size progression:
+    -25%: 38,736 bytes
+    +0%: 29,088 bytes
+    +25%: 23,328 bytes
+    +50%: 19,440 bytes
+
+
+================================================================================
+TEST SUMMARY
+================================================================================
+
+✓ PASS - English: 4/4 tests passed
+✓ PASS - Spanish: 4/4 tests passed
+✓ PASS - French: 4/4 tests passed
+✓ PASS - German: 4/4 tests passed
+✓ PASS - Portuguese: 4/4 tests passed
+
+================================================================================
+OVERALL RESULT: 20/20 tests passed
+✓ ALL TESTS PASSED
+
+Conclusion:
+- Speech rate controls work correctly for all 5 languages
+- Different rate values produce different file sizes
+- No errors occurred during generation
+================================================================================
+

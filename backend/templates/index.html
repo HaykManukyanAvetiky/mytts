@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTTS - Text to Speech</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/app.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <div class="container" x-data="ttsApp()" x-init="init()">
+        <header>
+            <h1>MyTTS</h1>
+            <p class="subtitle">Convert your text to natural-sounding speech</p>
+        </header>
+
+        <div class="form-container">
+            <!-- Language Selection -->
+            <div class="language-section">
+                <label for="language-select">Select Language:</label>
+                <select
+                    id="language-select"
+                    class="voice-dropdown"
+                    x-model="selectedLanguage"
+                    @change="onLanguageChange"
+                    :disabled="loadingVoices"
+                >
+                    <option value="All">All Languages</option>
+                    <template x-for="lang in languages" :key="lang">
+                        <option :value="lang" x-text="lang"></option>
+                    </template>
+                </select>
+            </div>
+
+            <!-- Voice Selection Section -->
+            <div class="voice-section">
+                <label for="voice-select">Select Voice:</label>
+                <div class="voice-selector">
+                    <select
+                        id="voice-select"
+                        class="voice-dropdown"
+                        x-model="selectedVoice"
+                        @change="onVoiceChange"
+                        :disabled="loadingVoices"
+                    >
+                        <template x-for="voice in voices" :key="voice.id">
+                            <option :value="voice.id" x-text="getVoiceLabel(voice)"></option>
+                        </template>
+                    </select>
+                    <button
+                        type="button"
+                        class="btn-preview"
+                        @click="previewVoice(selectedVoice)"
+                        :disabled="loadingVoices || !selectedVoice"
+                        :class="{ 'playing': previewingVoice === selectedVoice }"
+                        x-text="previewingVoice === selectedVoice ? 'Stop' : 'Preview'"
+                    >
+                    </button>
+                </div>
+
+                <!-- Voice Info Display -->
+                <div class="voice-info" x-show="selectedVoice">
+                    <template x-for="voice in voices" :key="voice.id">
+                        <div x-show="voice.id === selectedVoice">
+                            <span class="voice-style" x-text="voice.style"></span>
+                            <p class="voice-description" x-text="voice.description"></p>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <!-- Voice Control Settings -->
+            <div class="voice-controls">
+                <div class="control-group">
+                    <span class="control-label">Speed:</span>
+                    <div class="radio-group">
+                        <button type="button" class="radio-option" :class="{ 'selected': selectedRate === '0.75x' }" @click="selectedRate = '0.75x'; onRateChange()">0.75x</button>
+                        <button type="button" class="radio-option" :class="{ 'selected': selectedRate === '1.0x' }" @click="selectedRate = '1.0x'; onRateChange()">1.0x</button>
+                        <button type="button" class="radio-option" :class="{ 'selected': selectedRate === '1.15x' }" @click="selectedRate = '1.15x'; onRateChange()">1.15x</button>
+                        <button type="button" class="radio-option" :class="{ 'selected': selectedRate === '1.25x' }" @click="selectedRate = '1.25x'; onRateChange()">1.25x</button>
+                        <button type="button" class="radio-option" :class="{ 'selected': selectedRate === '1.5x' }" @click="selectedRate = '1.5x'; onRateChange()">1.5x</button>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <span class="control-label">Pitch:</span>
+                    <div class="radio-group">
+                        <button type="button" class="radio-option" :class="{ 'selected': selectedPitch === '-20%' }" @click="selectedPitch = '-20%'; onPitchChange()">-20%</button>
+                        <button type="button" class="radio-option" :class="{ 'selected': selectedPitch === '-10%' }" @click="selectedPitch = '-10%'; onPitchChange()">-10%</button>
+                        <button type="button" class="radio-option" :class="{ 'selected': selectedPitch === '0%' }" @click="selectedPitch = '0%'; onPitchChange()">0%</button>
+                        <button type="button" class="radio-option" :class="{ 'selected': selectedPitch === '+10%' }" @click="selectedPitch = '+10%'; onPitchChange()">+10%</button>
+                        <button type="button" class="radio-option" :class="{ 'selected': selectedPitch === '+20%' }" @click="selectedPitch = '+20%'; onPitchChange()">+20%</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <label for="text-input">Enter your text:</label>
+                <textarea
+                    id="text-input"
+                    rows="10"
+                    placeholder="Paste your script here..."
+                    maxlength="3000"
+                    x-model="text"
+                ></textarea>
+                <!-- Character counter (appears at 2500+ chars) -->
+                <div class="character-count" x-show="text.length >= 2500" :class="{ 'char-warning': text.length >= 2800 && text.length < 3000, 'char-danger': text.length >= 3000 }">
+                    <span x-text="text.length.toLocaleString()"></span> / 3,000 characters
+                </div>
+            </div>
+
+            <button
+                id="generate-btn"
+                type="button"
+                class="btn-primary"
+                @click="generateAudio"
+                :disabled="isLoading"
+                x-text="isLoading ? 'Generating...' : 'Generate Speech'"
+            >
+            </button>
+
+            <!-- Loading indicator -->
+            <div id="loading" class="loading" x-show="isLoading">
+                <div class="spinner"></div>
+                <span>
+                    Generating audio from
+                    <span x-text="text.length.toLocaleString()"></span>
+                    characters...
+                </span>
+            </div>
+
+            <!-- Error toast -->
+            <div id="error" class="toast error" x-show="error" x-transition x-text="error"></div>
+
+            <!-- Success toast -->
+            <div id="success" class="toast success" x-show="success" x-transition>
+                Audio generated successfully!
+            </div>
+
+            <div id="audio-player" class="audio-player" x-show="audioUrl">
+                <h3>Generated Audio</h3>
+                <audio controls :src="audioUrl">
+                    Your browser does not support the audio element.
+                </audio>
+                <a :href="audioUrl" download class="btn-secondary">Download MP3</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

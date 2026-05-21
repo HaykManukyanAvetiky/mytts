@@ -1,0 +1,67 @@
+{
+  "language": "Portuguese",
+  "total_voices": 5,
+  "discovery_date": "2025-12-18",
+  "regional_variants": [
+    {
+      "locale": "pt-BR",
+      "name": "Brazilian Portuguese",
+      "voice_count": 3,
+      "voices": [
+        {
+          "id": "pt-BR-AntonioNeural",
+          "name": "Antonio",
+          "gender": "Male",
+          "region": "Brazil"
+        },
+        {
+          "id": "pt-BR-FranciscaNeural",
+          "name": "Francisca",
+          "gender": "Female",
+          "region": "Brazil"
+        },
+        {
+          "id": "pt-BR-ThalitaMultilingualNeural",
+          "name": "Thalita Multilingual",
+          "gender": "Female",
+          "region": "Brazil",
+          "notes": "Multilingual voice capability"
+        }
+      ]
+    },
+    {
+      "locale": "pt-PT",
+      "name": "European Portuguese",
+      "voice_count": 2,
+      "voices": [
+        {
+          "id": "pt-PT-DuarteNeural",
+          "name": "Duarte",
+          "gender": "Male",
+          "region": "Portugal"
+        },
+        {
+          "id": "pt-PT-RaquelNeural",
+          "name": "Raquel",
+          "gender": "Female",
+          "region": "Portugal"
+        }
+      ]
+    }
+  ],
+  "voice_info_entries": [
+    "VoiceInfo(id=\"pt-BR-AntonioNeural\", name=\"Antonio\", gender=\"Male\", region=\"Brazil\")",
+    "VoiceInfo(id=\"pt-BR-FranciscaNeural\", name=\"Francisca\", gender=\"Female\", region=\"Brazil\")",
+    "VoiceInfo(id=\"pt-BR-ThalitaMultilingualNeural\", name=\"Thalita Multilingual\", gender=\"Female\", region=\"Brazil\")",
+    "VoiceInfo(id=\"pt-PT-DuarteNeural\", name=\"Duarte\", gender=\"Male\", region=\"Portugal\")",
+    "VoiceInfo(id=\"pt-PT-RaquelNeural\", name=\"Raquel\", gender=\"Female\", region=\"Portugal\")"
+  ],
+  "statistics": {
+    "male_voices": 2,
+    "female_voices": 3,
+    "brazilian_voices": 3,
+    "european_voices": 2
+  },
+  "suggested_default": "pt-BR-AntonioNeural",
+  "test_status": "All 5 voices tested successfully on 2025-12-18"
+}

@@ -1,0 +1,786 @@
+{
+  "version": "1.0.0",
+  "updated": "2025-12-18",
+  "voices": [
+    {
+      "id": "en-US-GuyNeural",
+      "name": "Guy",
+      "gender": "Male",
+      "accent": "US",
+      "language": "English",
+      "style": "Professional",
+      "description": "A professional male voice with a clear American accent, ideal for business presentations, technical narrations, and educational content.",
+      "preview_file": "en-US-GuyNeural.mp3"
+    },
+    {
+      "id": "en-US-JennyNeural",
+      "name": "Jenny",
+      "gender": "Female",
+      "accent": "US",
+      "language": "English",
+      "style": "Friendly",
+      "description": "A warm and friendly female voice with an American accent, perfect for casual content, podcasts, and conversational videos.",
+      "preview_file": "en-US-JennyNeural.mp3"
+    },
+    {
+      "id": "en-GB-RyanNeural",
+      "name": "Ryan",
+      "gender": "Male",
+      "accent": "UK",
+      "language": "English",
+      "style": "Professional",
+      "description": "A refined British male voice with RP accent, excellent for documentaries, audiobooks, and formal presentations.",
+      "preview_file": "en-GB-RyanNeural.mp3"
+    },
+    {
+      "id": "en-GB-SoniaNeural",
+      "name": "Sonia",
+      "gender": "Female",
+      "accent": "UK",
+      "language": "English",
+      "style": "Neutral",
+      "description": "A clear and neutral British female voice, versatile for news reading, tutorials, and general-purpose narration.",
+      "preview_file": "en-GB-SoniaNeural.mp3"
+    },
+    {
+      "id": "en-AU-NatashaNeural",
+      "name": "Natasha",
+      "gender": "Female",
+      "accent": "Australian",
+      "language": "English",
+      "style": "Friendly",
+      "description": "A bright and engaging Australian female voice, great for lifestyle content, travel vlogs, and upbeat narrations.",
+      "preview_file": "en-AU-NatashaNeural.mp3"
+    },
+    {
+      "id": "es-AR-ElenaNeural",
+      "name": "Elena",
+      "gender": "Female",
+      "accent": "Argentina",
+      "language": "Spanish",
+      "style": "Warm",
+      "description": "A warm and expressive Argentine female voice with a distinctive Rioplatense accent, perfect for storytelling, podcasts, and conversational content.",
+      "preview_file": "es-AR-ElenaNeural.mp3"
+    },
+    {
+      "id": "es-AR-TomasNeural",
+      "name": "Tomas",
+      "gender": "Male",
+      "accent": "Argentina",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly Argentine male voice with a characteristic Rioplatense accent, ideal for casual narrations and engaging content.",
+      "preview_file": "es-AR-TomasNeural.mp3"
+    },
+    {
+      "id": "es-BO-MarceloNeural",
+      "name": "Marcelo",
+      "gender": "Male",
+      "accent": "Bolivia",
+      "language": "Spanish",
+      "style": "Professional",
+      "description": "A professional Bolivian male voice with a clear Andean accent, suitable for educational content and formal presentations.",
+      "preview_file": "es-BO-MarceloNeural.mp3"
+    },
+    {
+      "id": "es-BO-SofiaNeural",
+      "name": "Sofia",
+      "gender": "Female",
+      "accent": "Bolivia",
+      "language": "Spanish",
+      "style": "Clear",
+      "description": "A clear and articulate Bolivian female voice, excellent for tutorials, documentaries, and informative content.",
+      "preview_file": "es-BO-SofiaNeural.mp3"
+    },
+    {
+      "id": "es-CL-CatalinaNeural",
+      "name": "Catalina",
+      "gender": "Female",
+      "accent": "Chile",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly Chilean female voice with a distinctive accent, great for lifestyle content, vlogs, and casual narrations.",
+      "preview_file": "es-CL-CatalinaNeural.mp3"
+    },
+    {
+      "id": "es-CL-LorenzoNeural",
+      "name": "Lorenzo",
+      "gender": "Male",
+      "accent": "Chile",
+      "language": "Spanish",
+      "style": "Neutral",
+      "description": "A neutral and versatile Chilean male voice, suitable for news reading, audiobooks, and general-purpose narration.",
+      "preview_file": "es-CL-LorenzoNeural.mp3"
+    },
+    {
+      "id": "es-CO-GonzaloNeural",
+      "name": "Gonzalo",
+      "gender": "Male",
+      "accent": "Colombia",
+      "language": "Spanish",
+      "style": "Professional",
+      "description": "A professional Colombian male voice with a clear accent, ideal for business presentations and formal content.",
+      "preview_file": "es-CO-GonzaloNeural.mp3"
+    },
+    {
+      "id": "es-CO-SalomeNeural",
+      "name": "Salome",
+      "gender": "Female",
+      "accent": "Colombia",
+      "language": "Spanish",
+      "style": "Warm",
+      "description": "A warm and melodious Colombian female voice, perfect for storytelling, advertisements, and engaging content.",
+      "preview_file": "es-CO-SalomeNeural.mp3"
+    },
+    {
+      "id": "es-CR-JuanNeural",
+      "name": "Juan",
+      "gender": "Male",
+      "accent": "Costa Rica",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly Costa Rican male voice with a clear Central American accent, great for educational and conversational content.",
+      "preview_file": "es-CR-JuanNeural.mp3"
+    },
+    {
+      "id": "es-CR-MariaNeural",
+      "name": "Maria",
+      "gender": "Female",
+      "accent": "Costa Rica",
+      "language": "Spanish",
+      "style": "Clear",
+      "description": "A clear and articulate Costa Rican female voice, excellent for tutorials, customer service, and informative narrations.",
+      "preview_file": "es-CR-MariaNeural.mp3"
+    },
+    {
+      "id": "es-CU-BelkysNeural",
+      "name": "Belkys",
+      "gender": "Female",
+      "accent": "Cuba",
+      "language": "Spanish",
+      "style": "Warm",
+      "description": "A warm and expressive Cuban female voice with Caribbean flair, ideal for cultural content and engaging storytelling.",
+      "preview_file": "es-CU-BelkysNeural.mp3"
+    },
+    {
+      "id": "es-CU-ManuelNeural",
+      "name": "Manuel",
+      "gender": "Male",
+      "accent": "Cuba",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly Cuban male voice with a distinctive Caribbean accent, perfect for podcasts and conversational content.",
+      "preview_file": "es-CU-ManuelNeural.mp3"
+    },
+    {
+      "id": "es-DO-EmilioNeural",
+      "name": "Emilio",
+      "gender": "Male",
+      "accent": "Dominican Republic",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly Dominican male voice with a vibrant Caribbean accent, great for entertainment and casual content.",
+      "preview_file": "es-DO-EmilioNeural.mp3"
+    },
+    {
+      "id": "es-DO-RamonaNeural",
+      "name": "Ramona",
+      "gender": "Female",
+      "accent": "Dominican Republic",
+      "language": "Spanish",
+      "style": "Warm",
+      "description": "A warm Dominican female voice with tropical energy, perfect for lifestyle content and engaging narrations.",
+      "preview_file": "es-DO-RamonaNeural.mp3"
+    },
+    {
+      "id": "es-EC-AndreaNeural",
+      "name": "Andrea",
+      "gender": "Female",
+      "accent": "Ecuador",
+      "language": "Spanish",
+      "style": "Clear",
+      "description": "A clear and pleasant Ecuadorian female voice, excellent for educational content and professional presentations.",
+      "preview_file": "es-EC-AndreaNeural.mp3"
+    },
+    {
+      "id": "es-EC-LuisNeural",
+      "name": "Luis",
+      "gender": "Male",
+      "accent": "Ecuador",
+      "language": "Spanish",
+      "style": "Professional",
+      "description": "A professional Ecuadorian male voice with a neutral Andean accent, suitable for business and formal content.",
+      "preview_file": "es-EC-LuisNeural.mp3"
+    },
+    {
+      "id": "es-ES-AlvaroNeural",
+      "name": "Alvaro",
+      "gender": "Male",
+      "accent": "Spain",
+      "language": "Spanish",
+      "style": "Professional",
+      "description": "A professional Spanish male voice with a clear Castilian accent, ideal for business presentations and formal content.",
+      "preview_file": "es-ES-AlvaroNeural.mp3"
+    },
+    {
+      "id": "es-ES-ElviraNeural",
+      "name": "Elvira",
+      "gender": "Female",
+      "accent": "Spain",
+      "language": "Spanish",
+      "style": "Professional",
+      "description": "A professional Spanish female voice with elegance, ideal for formal presentations and sophisticated content.",
+      "preview_file": "es-ES-ElviraNeural.mp3"
+    },
+    {
+      "id": "es-ES-XimenaNeural",
+      "name": "Ximena",
+      "gender": "Female",
+      "accent": "Spain",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly Spanish female voice with warmth, perfect for customer-facing applications and engaging content.",
+      "preview_file": "es-ES-XimenaNeural.mp3"
+    },
+    {
+      "id": "es-GQ-JavierNeural",
+      "name": "Javier",
+      "gender": "Male",
+      "accent": "Equatorial Guinea",
+      "language": "Spanish",
+      "style": "Neutral",
+      "description": "A neutral Equatorial Guinean male voice with African influences, suitable for diverse content types.",
+      "preview_file": "es-GQ-JavierNeural.mp3"
+    },
+    {
+      "id": "es-GQ-TeresaNeural",
+      "name": "Teresa",
+      "gender": "Female",
+      "accent": "Equatorial Guinea",
+      "language": "Spanish",
+      "style": "Clear",
+      "description": "A clear Equatorial Guinean female voice with unique African-Spanish blend, excellent for educational content.",
+      "preview_file": "es-GQ-TeresaNeural.mp3"
+    },
+    {
+      "id": "es-GT-AndresNeural",
+      "name": "Andres",
+      "gender": "Male",
+      "accent": "Guatemala",
+      "language": "Spanish",
+      "style": "Professional",
+      "description": "A professional Guatemalan male voice with a clear Central American accent, ideal for business and formal content.",
+      "preview_file": "es-GT-AndresNeural.mp3"
+    },
+    {
+      "id": "es-GT-MartaNeural",
+      "name": "Marta",
+      "gender": "Female",
+      "accent": "Guatemala",
+      "language": "Spanish",
+      "style": "Warm",
+      "description": "A warm Guatemalan female voice with cultural richness, perfect for storytelling and engaging narrations.",
+      "preview_file": "es-GT-MartaNeural.mp3"
+    },
+    {
+      "id": "es-HN-CarlosNeural",
+      "name": "Carlos",
+      "gender": "Male",
+      "accent": "Honduras",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly Honduran male voice with a pleasant Central American accent, great for conversational content.",
+      "preview_file": "es-HN-CarlosNeural.mp3"
+    },
+    {
+      "id": "es-HN-KarlaNeural",
+      "name": "Karla",
+      "gender": "Female",
+      "accent": "Honduras",
+      "language": "Spanish",
+      "style": "Clear",
+      "description": "A clear Honduran female voice with good articulation, excellent for tutorials and educational material.",
+      "preview_file": "es-HN-KarlaNeural.mp3"
+    },
+    {
+      "id": "es-MX-DaliaNeural",
+      "name": "Dalia",
+      "gender": "Female",
+      "accent": "Mexico",
+      "language": "Spanish",
+      "style": "Clear",
+      "description": "A clear Mexican female voice with excellent articulation, suitable for news reading and informative content.",
+      "preview_file": "es-MX-DaliaNeural.mp3"
+    },
+    {
+      "id": "es-MX-JorgeNeural",
+      "name": "Jorge",
+      "gender": "Male",
+      "accent": "Mexico",
+      "language": "Spanish",
+      "style": "Neutral",
+      "description": "A neutral Mexican male voice with versatility, suitable for various content types and general narration.",
+      "preview_file": "es-MX-JorgeNeural.mp3"
+    },
+    {
+      "id": "es-NI-FedericoNeural",
+      "name": "Federico",
+      "gender": "Male",
+      "accent": "Nicaragua",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly Nicaraguan male voice with a pleasant Central American accent, great for conversational content.",
+      "preview_file": "es-NI-FedericoNeural.mp3"
+    },
+    {
+      "id": "es-NI-YolandaNeural",
+      "name": "Yolanda",
+      "gender": "Female",
+      "accent": "Nicaragua",
+      "language": "Spanish",
+      "style": "Warm",
+      "description": "A warm Nicaraguan female voice with cultural authenticity, perfect for storytelling and engaging narrations.",
+      "preview_file": "es-NI-YolandaNeural.mp3"
+    },
+    {
+      "id": "es-PA-MargaritaNeural",
+      "name": "Margarita",
+      "gender": "Female",
+      "accent": "Panama",
+      "language": "Spanish",
+      "style": "Clear",
+      "description": "A clear Panamanian female voice with good articulation, excellent for educational content and tutorials.",
+      "preview_file": "es-PA-MargaritaNeural.mp3"
+    },
+    {
+      "id": "es-PA-RobertoNeural",
+      "name": "Roberto",
+      "gender": "Male",
+      "accent": "Panama",
+      "language": "Spanish",
+      "style": "Professional",
+      "description": "A professional Panamanian male voice with confidence, ideal for business presentations and formal content.",
+      "preview_file": "es-PA-RobertoNeural.mp3"
+    },
+    {
+      "id": "es-PE-AlexNeural",
+      "name": "Alex",
+      "gender": "Male",
+      "accent": "Peru",
+      "language": "Spanish",
+      "style": "Neutral",
+      "description": "A neutral Peruvian male voice with Andean influences, suitable for various content types and general narration.",
+      "preview_file": "es-PE-AlexNeural.mp3"
+    },
+    {
+      "id": "es-PE-CamilaNeural",
+      "name": "Camila",
+      "gender": "Female",
+      "accent": "Peru",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly Peruvian female voice with warmth, perfect for lifestyle content and conversational narrations.",
+      "preview_file": "es-PE-CamilaNeural.mp3"
+    },
+    {
+      "id": "es-PR-KarinaNeural",
+      "name": "Karina",
+      "gender": "Female",
+      "accent": "Puerto Rico",
+      "language": "Spanish",
+      "style": "Warm",
+      "description": "A warm Puerto Rican female voice with Caribbean energy, great for entertainment and engaging content.",
+      "preview_file": "es-PR-KarinaNeural.mp3"
+    },
+    {
+      "id": "es-PR-VictorNeural",
+      "name": "Victor",
+      "gender": "Male",
+      "accent": "Puerto Rico",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly Puerto Rican male voice with vibrant Caribbean accent, perfect for podcasts and casual content.",
+      "preview_file": "es-PR-VictorNeural.mp3"
+    },
+    {
+      "id": "es-PY-MarioNeural",
+      "name": "Mario",
+      "gender": "Male",
+      "accent": "Paraguay",
+      "language": "Spanish",
+      "style": "Neutral",
+      "description": "A neutral Paraguayan male voice with Guaraní influences, suitable for diverse content types.",
+      "preview_file": "es-PY-MarioNeural.mp3"
+    },
+    {
+      "id": "es-PY-TaniaNeural",
+      "name": "Tania",
+      "gender": "Female",
+      "accent": "Paraguay",
+      "language": "Spanish",
+      "style": "Clear",
+      "description": "A clear Paraguayan female voice with pleasant tone, excellent for educational material and tutorials.",
+      "preview_file": "es-PY-TaniaNeural.mp3"
+    },
+    {
+      "id": "es-SV-LorenaNeural",
+      "name": "Lorena",
+      "gender": "Female",
+      "accent": "El Salvador",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly Salvadoran female voice with Central American warmth, great for conversational content.",
+      "preview_file": "es-SV-LorenaNeural.mp3"
+    },
+    {
+      "id": "es-SV-RodrigoNeural",
+      "name": "Rodrigo",
+      "gender": "Male",
+      "accent": "El Salvador",
+      "language": "Spanish",
+      "style": "Professional",
+      "description": "A professional Salvadoran male voice with clarity, ideal for business presentations and formal content.",
+      "preview_file": "es-SV-RodrigoNeural.mp3"
+    },
+    {
+      "id": "es-US-AlonsoNeural",
+      "name": "Alonso",
+      "gender": "Male",
+      "accent": "US",
+      "language": "Spanish",
+      "style": "Professional",
+      "description": "A professional US Spanish male voice with neutral accent, perfect for bilingual content and Hispanic American audiences.",
+      "preview_file": "es-US-AlonsoNeural.mp3"
+    },
+    {
+      "id": "es-US-PalomaNeural",
+      "name": "Paloma",
+      "gender": "Female",
+      "accent": "US",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly US Spanish female voice with clear diction, ideal for bilingual applications and Hispanic American content.",
+      "preview_file": "es-US-PalomaNeural.mp3"
+    },
+    {
+      "id": "es-UY-MateoNeural",
+      "name": "Mateo",
+      "gender": "Male",
+      "accent": "Uruguay",
+      "language": "Spanish",
+      "style": "Neutral",
+      "description": "A neutral Uruguayan male voice with Rioplatense accent, suitable for various content types.",
+      "preview_file": "es-UY-MateoNeural.mp3"
+    },
+    {
+      "id": "es-UY-ValentinaNeural",
+      "name": "Valentina",
+      "gender": "Female",
+      "accent": "Uruguay",
+      "language": "Spanish",
+      "style": "Warm",
+      "description": "A warm Uruguayan female voice with Rio de la Plata charm, perfect for storytelling and engaging content.",
+      "preview_file": "es-UY-ValentinaNeural.mp3"
+    },
+    {
+      "id": "es-VE-PaolaNeural",
+      "name": "Paola",
+      "gender": "Female",
+      "accent": "Venezuela",
+      "language": "Spanish",
+      "style": "Friendly",
+      "description": "A friendly Venezuelan female voice with Caribbean warmth, great for lifestyle content and casual narrations.",
+      "preview_file": "es-VE-PaolaNeural.mp3"
+    },
+    {
+      "id": "es-VE-SebastianNeural",
+      "name": "Sebastian",
+      "gender": "Male",
+      "accent": "Venezuela",
+      "language": "Spanish",
+      "style": "Professional",
+      "description": "A professional Venezuelan male voice with clear diction, ideal for business presentations and formal content.",
+      "preview_file": "es-VE-SebastianNeural.mp3"
+    },
+    {
+      "id": "fr-FR-DeniseNeural",
+      "name": "Denise",
+      "gender": "Female",
+      "accent": "France",
+      "language": "French",
+      "style": "Professional",
+      "description": "A professional French female voice with classic Parisian accent, ideal for corporate presentations, documentaries, and formal content.",
+      "preview_file": "fr-FR-DeniseNeural.mp3"
+    },
+    {
+      "id": "fr-FR-EloiseNeural",
+      "name": "Eloise",
+      "gender": "Female",
+      "accent": "France",
+      "language": "French",
+      "style": "Friendly",
+      "description": "A friendly French female voice with a warm Parisian tone, perfect for lifestyle content, podcasts, and conversational narrations.",
+      "preview_file": "fr-FR-EloiseNeural.mp3"
+    },
+    {
+      "id": "fr-FR-HenriNeural",
+      "name": "Henri",
+      "gender": "Male",
+      "accent": "France",
+      "language": "French",
+      "style": "Professional",
+      "description": "A professional French male voice with refined Parisian accent, excellent for business content, audiobooks, and formal presentations.",
+      "preview_file": "fr-FR-HenriNeural.mp3"
+    },
+    {
+      "id": "fr-FR-RemyMultilingualNeural",
+      "name": "Remy",
+      "gender": "Male",
+      "accent": "France",
+      "language": "French",
+      "style": "Professional",
+      "description": "A multilingual French male voice with excellent diction and international appeal, perfect for global business and professional content.",
+      "preview_file": "fr-FR-RemyMultilingualNeural.mp3"
+    },
+    {
+      "id": "fr-FR-VivienneMultilingualNeural",
+      "name": "Vivienne",
+      "gender": "Female",
+      "accent": "France",
+      "language": "French",
+      "style": "Professional",
+      "description": "A multilingual French female voice with sophisticated tone and refined pronunciation, ideal for international presentations and formal content.",
+      "preview_file": "fr-FR-VivienneMultilingualNeural.mp3"
+    },
+    {
+      "id": "fr-CA-AntoineNeural",
+      "name": "Antoine",
+      "gender": "Male",
+      "accent": "Canada",
+      "language": "French",
+      "style": "Neutral",
+      "description": "A neutral Canadian French male voice with Quebec accent, suitable for news reading, tutorials, and general-purpose narration.",
+      "preview_file": "fr-CA-AntoineNeural.mp3"
+    },
+    {
+      "id": "fr-CA-JeanNeural",
+      "name": "Jean",
+      "gender": "Male",
+      "accent": "Canada",
+      "language": "French",
+      "style": "Friendly",
+      "description": "A friendly Canadian French male voice with approachable Quebec accent, great for conversational content and casual narrations.",
+      "preview_file": "fr-CA-JeanNeural.mp3"
+    },
+    {
+      "id": "fr-CA-SylvieNeural",
+      "name": "Sylvie",
+      "gender": "Female",
+      "accent": "Canada",
+      "language": "French",
+      "style": "Warm",
+      "description": "A warm Canadian French female voice with Quebec charm, perfect for storytelling, podcasts, and engaging content.",
+      "preview_file": "fr-CA-SylvieNeural.mp3"
+    },
+    {
+      "id": "fr-CA-ThierryNeural",
+      "name": "Thierry",
+      "gender": "Male",
+      "accent": "Canada",
+      "language": "French",
+      "style": "Professional",
+      "description": "A professional Canadian French male voice with clear Quebec accent, ideal for business presentations and formal content.",
+      "preview_file": "fr-CA-ThierryNeural.mp3"
+    },
+    {
+      "id": "fr-BE-CharlineNeural",
+      "name": "Charline",
+      "gender": "Female",
+      "accent": "Belgium",
+      "language": "French",
+      "style": "Clear",
+      "description": "A clear Belgian French female voice with distinctive accent, excellent for educational content, tutorials, and informative narrations.",
+      "preview_file": "fr-BE-CharlineNeural.mp3"
+    },
+    {
+      "id": "fr-BE-GerardNeural",
+      "name": "Gerard",
+      "gender": "Male",
+      "accent": "Belgium",
+      "language": "French",
+      "style": "Professional",
+      "description": "A professional Belgian French male voice with authoritative tone, ideal for corporate content, documentaries, and formal presentations.",
+      "preview_file": "fr-BE-GerardNeural.mp3"
+    },
+    {
+      "id": "fr-CH-ArianeNeural",
+      "name": "Ariane",
+      "gender": "Female",
+      "accent": "Switzerland",
+      "language": "French",
+      "style": "Neutral",
+      "description": "A neutral Swiss French female voice with clear articulation, suitable for news reading, informative content, and professional applications.",
+      "preview_file": "fr-CH-ArianeNeural.mp3"
+    },
+    {
+      "id": "fr-CH-FabriceNeural",
+      "name": "Fabrice",
+      "gender": "Male",
+      "accent": "Switzerland",
+      "language": "French",
+      "style": "Professional",
+      "description": "A professional Swiss French male voice with precise diction, excellent for business content, technical narrations, and formal presentations.",
+      "preview_file": "fr-CH-FabriceNeural.mp3"
+    },
+    {
+      "id": "de-DE-AmalaNeural",
+      "name": "Amala",
+      "gender": "Female",
+      "accent": "Germany",
+      "language": "German",
+      "style": "Professional",
+      "description": "A professional German female voice with clear standard German accent, ideal for business presentations, formal content, and corporate communications.",
+      "preview_file": "de-DE-AmalaNeural.mp3"
+    },
+    {
+      "id": "de-DE-ConradNeural",
+      "name": "Conrad",
+      "gender": "Male",
+      "accent": "Germany",
+      "language": "German",
+      "style": "Professional",
+      "description": "A professional German male voice with authoritative tone, excellent for documentaries, business content, and formal presentations.",
+      "preview_file": "de-DE-ConradNeural.mp3"
+    },
+    {
+      "id": "de-DE-FlorianMultilingualNeural",
+      "name": "Florian",
+      "gender": "Male",
+      "accent": "Germany",
+      "language": "German",
+      "style": "Professional",
+      "description": "A multilingual German male voice with refined pronunciation and international appeal, perfect for global business and professional content.",
+      "preview_file": "de-DE-FlorianMultilingualNeural.mp3"
+    },
+    {
+      "id": "de-DE-KatjaNeural",
+      "name": "Katja",
+      "gender": "Female",
+      "accent": "Germany",
+      "language": "German",
+      "style": "Friendly",
+      "description": "A friendly German female voice with warm tone, great for conversational content, podcasts, and engaging narrations.",
+      "preview_file": "de-DE-KatjaNeural.mp3"
+    },
+    {
+      "id": "de-DE-KillianNeural",
+      "name": "Killian",
+      "gender": "Male",
+      "accent": "Germany",
+      "language": "German",
+      "style": "Neutral",
+      "description": "A neutral German male voice with clear diction, suitable for news reading, tutorials, and general-purpose narration.",
+      "preview_file": "de-DE-KillianNeural.mp3"
+    },
+    {
+      "id": "de-DE-SeraphinaMultilingualNeural",
+      "name": "Seraphina",
+      "gender": "Female",
+      "accent": "Germany",
+      "language": "German",
+      "style": "Professional",
+      "description": "A multilingual German female voice with sophisticated tone and excellent articulation, ideal for international presentations and formal content.",
+      "preview_file": "de-DE-SeraphinaMultilingualNeural.mp3"
+    },
+    {
+      "id": "de-AT-IngridNeural",
+      "name": "Ingrid",
+      "gender": "Female",
+      "accent": "Austria",
+      "language": "German",
+      "style": "Warm",
+      "description": "A warm Austrian female voice with distinctive Viennese charm, perfect for cultural content, storytelling, and engaging narrations.",
+      "preview_file": "de-AT-IngridNeural.mp3"
+    },
+    {
+      "id": "de-AT-JonasNeural",
+      "name": "Jonas",
+      "gender": "Male",
+      "accent": "Austria",
+      "language": "German",
+      "style": "Friendly",
+      "description": "A friendly Austrian male voice with approachable tone, great for conversational content, podcasts, and casual narrations.",
+      "preview_file": "de-AT-JonasNeural.mp3"
+    },
+    {
+      "id": "de-CH-JanNeural",
+      "name": "Jan",
+      "gender": "Male",
+      "accent": "Switzerland",
+      "language": "German",
+      "style": "Clear",
+      "description": "A clear Swiss German male voice with precise articulation, excellent for educational content, tutorials, and informative narrations.",
+      "preview_file": "de-CH-JanNeural.mp3"
+    },
+    {
+      "id": "de-CH-LeniNeural",
+      "name": "Leni",
+      "gender": "Female",
+      "accent": "Switzerland",
+      "language": "German",
+      "style": "Neutral",
+      "description": "A neutral Swiss German female voice with refined pronunciation, suitable for news reading, professional applications, and general-purpose content.",
+      "preview_file": "de-CH-LeniNeural.mp3"
+    },
+    {
+      "id": "pt-BR-AntonioNeural",
+      "name": "Antonio",
+      "gender": "Male",
+      "accent": "Brazil",
+      "language": "Portuguese",
+      "style": "Professional",
+      "description": "A professional Brazilian Portuguese male voice with clear diction, ideal for business presentations, formal content, and corporate communications.",
+      "preview_file": "pt-BR-AntonioNeural.mp3"
+    },
+    {
+      "id": "pt-BR-FranciscaNeural",
+      "name": "Francisca",
+      "gender": "Female",
+      "accent": "Brazil",
+      "language": "Portuguese",
+      "style": "Warm",
+      "description": "A warm Brazilian Portuguese female voice with engaging tone, perfect for storytelling, podcasts, and conversational content.",
+      "preview_file": "pt-BR-FranciscaNeural.mp3"
+    },
+    {
+      "id": "pt-BR-ThalitaMultilingualNeural",
+      "name": "Thalita",
+      "gender": "Female",
+      "accent": "Brazil",
+      "language": "Portuguese",
+      "style": "Professional",
+      "description": "A multilingual Brazilian Portuguese female voice with refined pronunciation and international appeal, excellent for global business and professional content.",
+      "preview_file": "pt-BR-ThalitaMultilingualNeural.mp3"
+    },
+    {
+      "id": "pt-PT-DuarteNeural",
+      "name": "Duarte",
+      "gender": "Male",
+      "accent": "Portugal",
+      "language": "Portuguese",
+      "style": "Neutral",
+      "description": "A neutral European Portuguese male voice with clear articulation, suitable for news reading, tutorials, and general-purpose narration.",
+      "preview_file": "pt-PT-DuarteNeural.mp3"
+    },
+    {
+      "id": "pt-PT-RaquelNeural",
+      "name": "Raquel",
+      "gender": "Female",
+      "accent": "Portugal",
+      "language": "Portuguese",
+      "style": "Friendly",
+      "description": "A friendly European Portuguese female voice with approachable tone, great for lifestyle content, vlogs, and casual narrations.",
+      "preview_file": "pt-PT-RaquelNeural.mp3"
+    }
+  ]
+}
