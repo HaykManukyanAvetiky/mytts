@@ -107,4 +107,8 @@ async def root(request: Request) -> HTMLResponse:
     Returns:
         HTML template response with the TTS interface.
     """
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(
+        request=request,
+        name="index.html",
+        context={},
+    )
