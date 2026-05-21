@@ -55,6 +55,8 @@ htmlcov/
 /tmp/
 *.mp3
 audio_temp/
+# ...but keep the bundled voice preview samples
+!static/audio/previews/*.mp3
 
 # Logs
 *.log
